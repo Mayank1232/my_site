@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    My Blog
+{% endblock title %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}"/>
+{% endblock css_files %}
+{% block body %}
+    <header id="main-navigation">
+        <h1>
+            <a href="">Mayank's Blog</a>
+        </h1>
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+    </header>
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blog/images/coding.jpg' %}"
+                 alt="Mayank - The Author of this Blog"
+                 height=""
+                 width=""/>
+            <h2>Mayank's Blog</h2>
+        </header>
+        <p>Hii, I am Mayank and I love to blog about tech and the world</p>
+    </section>
+    <section id="latest-posts">
+        <h2>Latest Thoughts</h2>
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="{% static 'blog/images/mountains.jpg' %}"
+                             alt="Mountain Hiking"
+                             height="50%"
+                             width="100%"/>
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>
+                                There is nothing like the views you get when hiking in the mountains! And I wasn't even prepared for what happened whilst I was enjoying the view!
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a 20 year old student from India. I love to code and I am currently learning Python and Django. I also love to travel and I have been to many places in India and I am planning to travel to many more places in the future.
+        </p>
+        <p>
+            I am also a big fan of the Marvel Cinematic Universe and I have watched all the movies and I am also a big fan of the Marvel Comics. I also love to read books and I am currently reading the Harry Potter series.
+        </p>
+    </section>
+{% endblock body %}
